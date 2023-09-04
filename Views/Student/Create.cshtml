@@ -1,0 +1,29 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create  Registration</h1>
+
+<form method="post">
+    <pre>
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+
+    <label asp-for="FatherName"></label>
+    <input asp-for="FatherName" />
+
+    <label asp-for="MotherName"></label>
+    <input asp-for="MotherName" />
+
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+
+    <label asp-for="Mobile"></label>
+    <input asp-for="Mobile" />
+
+    <button type="submit">Create</button>
+
+    <a asp-action="Index" asp-controller="Student">Back to Return</a>
+    </pre>
+</form>
